@@ -8,10 +8,19 @@ import SignUp  from './components/SignUp/SignUp';
 import Profile from './components/Profile/Profile';
 import Nav from './components/Navbar/Navbar';
 import Post from './components/Post/Post'
+import Feed from './components/Feed/Feed'
+import Sidebar from './components/Sidebar/Sidebar';
+import RightSidebar from './components/RightSidebar/RightSidebar';
 ReactDOM.render(
   <React.StrictMode>
+
     <Nav/>
-    <Post/>
+    <div className="flex">
+    <Sidebar/>
+    <Feed/>
+    <RightSidebar/>
+    </div>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
