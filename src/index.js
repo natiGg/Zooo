@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import Login from './components/Login/Login'
 import reportWebVitals from './reportWebVitals';
-
+import Login from './components/Login/Login';
+import SignUp  from './components/SignUp/SignUp';
+import Profile from './components/Profile/Profile';
+import Nav from './components/Navbar/Navbar';
+import Post from './components/Post/Post'
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Nav/>
+    <Post/>
   </React.StrictMode>,
   document.getElementById('root')
 );
